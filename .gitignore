@@ -1,0 +1,12 @@
+HELP.md
+.classpath
+.project
+*/mvnw.cmd
+*/mvnw
+
+.mvn/
+target/
+.settings/
+.idea
+
+*/**/*.iml
