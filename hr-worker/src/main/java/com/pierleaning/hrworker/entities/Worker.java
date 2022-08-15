@@ -1,4 +1,4 @@
-package com.ricardo.hrworker.entities;
+package com.pierleaning.hrworker.entities;
 
 import javax.persistence.*;
 

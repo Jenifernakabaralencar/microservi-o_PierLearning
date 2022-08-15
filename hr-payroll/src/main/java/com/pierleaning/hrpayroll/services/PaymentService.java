@@ -1,9 +1,8 @@
-package com.ricardo.hrpayroll.services;
+package com.pierleaning.hrpayroll.services;
 
+import com.pierleaning.hrpayroll.entities.Payment;
+import com.pierleaning.hrpayroll.entities.Worker;
 import org.springframework.stereotype.Service;
-
-import com.ricardo.hrpayroll.entities.Payment;
-import com.ricardo.hrpayroll.entities.Worker;
 
 @Service
 public class PaymentService {

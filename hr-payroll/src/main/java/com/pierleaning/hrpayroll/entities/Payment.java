@@ -1,4 +1,4 @@
-package com.ricardo.hrpayroll.entities;
+package com.pierleaning.hrpayroll.entities;
 
 public class Payment {
 	private String name;
