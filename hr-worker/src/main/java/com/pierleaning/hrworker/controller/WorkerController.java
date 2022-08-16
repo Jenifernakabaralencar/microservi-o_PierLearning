@@ -26,17 +26,12 @@ public class WorkerController {
 	private WorkerRepository workerRepository;
 
 	@GetMapping
-	public ResponseEntity<Iterable<Worker>> getWorkers() {
+	public ResponseEntity<Iterable<Worker>> findAll() {
 		return ResponseEntity.ok(workerRepository.findAll());
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Worker> getWorker(@PathVariable int id) {
-//		try {
-//			Thread.sleep(3000);
-//		} catch (InterruptedException e) {
-//			throw new RuntimeException(e);
-//		}
+	public ResponseEntity<Worker> findById(@PathVariable int id) {
 
 		// log apenas para testar o balanceamento de carga
 		logger.info("\nWorker Service - Port: " + env.getProperty("local.server.port"));
